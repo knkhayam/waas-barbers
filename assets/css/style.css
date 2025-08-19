@@ -1,4 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Open+Sans:wght@400;600;700;800&display=swap");
+
+/* Custom styles for new sections */
+.gallery-area {
+    background: #f8f9fa;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.pricing-area {
+    background: #fff;
+}
+
+.price-list-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.price-list-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-area {
+    background: #f8f9fa;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+    color: #ff6b35;
+}
+
+.contact-info h5 {
+    color: #150303;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin-bottom: 0;
+}
+
+.contact-info a {
+    color: #675E5E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff6b35;
+}
+
+/* Improved section titles */
+.section-tittle h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #150303;
+}
+
+.section-tittle p {
+    font-size: 18px;
+    color: #675E5E;
+    margin-bottom: 0;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    .section-tittle h2 {
+        font-size: 32px;
+    }
+    
+    .price-list-container {
+        padding: 20px;
+    }
+}
+
 .section-bg {
     background: #F2F4F8
 }
